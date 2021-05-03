@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=Original+Surfer&family=Roboto&display=swap');
+
+/* Cores do Projeto */
+:root {
+    --amarelo: hsl(38, 100%, 49%);
+    --preto: #130303;
+    --branco: #FFFFFA;
+    --vermelho: #A33B20;
+    --azul: #33658A;
+}
+
+/* Reset estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--preto);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+header .container .logo {
+    color: var(--amarelo);
+    font-family: 'Original Surfer', cursive;
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+header .container nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+header .container nav a:hover {
+    color: var(--amarelo);
+}
+
+.prato-destaque {
+    height: 400px;
+    background:  linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5) 100%), url("/img/foto-destaque.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: var(--branco);
+}
+
+main .prato-destaque .container {
+    margin-left: 25px;
+    margin-bottom: 48px;
+}
+
+.prato-destaque .titulo {
+    font-size: 36px;
+    font-family: 'Antonio', sans-serif;
+}
+
+.prato-destaque .descricao {
+    margin-top: 5px;
+    width: 70%;
+    text-align: justify;
+}
+
+.prato-destaque .botoes {
+    margin-top: 24px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+    padding: 15px 30px; 
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:nth-child(1) {
+    background-color: rgba(250, 157, 0, .8)
+}
+
+.botoes .botao:hover {
+    transform: scale(1.2);
+}
+
+.wrapper {
+    margin-top: 20px;
+}
+
+.box-prato {
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+
+.item button {
+    background-color: rgba(250, 157, 0, .8);
+    width: 100%;
+    margin-top: 5px;
+}
+
+.wrapper h2 {
+    font-size: 28px;
+    font-family: 'Antonio', sans-serif;
+    margin-bottom: 10px;
+    color: var(--azul);
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(245, 245, 245, .4);
+    background-color: var(--preto);
+}
+
+footer a {
+    color: rgba(245, 245, 245, .4);
+}
+
+footer a:hover {
+    color:rgba(250, 157, 0, .8)
+}
